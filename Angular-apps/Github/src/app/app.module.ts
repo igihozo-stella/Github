@@ -5,12 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GitProfileComponent } from './git-profile/git-profile.component';
+import { GitProfileComponent } from 'src/app/git-profile/git-profile.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GitProfileComponent
+    GitProfileComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
