@@ -25,9 +25,8 @@ import { GithubComponent } from './github/github.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
-    NgProgressModule.forRoot(),
-    NgProgressHttpClientModule
+    HttpClientModule
+    
   ],
   providers: [ProfileRequestService],
   bootstrap: [AppComponent]
