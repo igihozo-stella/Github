@@ -1,18 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GitProfileComponent } from 'src/app/git-profile/git-profile.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
+import { ProfileComponent } from './profile/profile.component';
+import { AboutComponent } from './about/about.component';
+import { ProfileRequestService } from './profile-http/profile-request.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { GithubComponent } from './github/github.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GitProfileComponent,
-    UserProfileComponent
+    ProfileComponent,
+    AboutComponent,
+    NavbarComponent,
+    GithubComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +25,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ProfileRequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
