@@ -7,6 +7,7 @@ import { GithubComponent} from './github/github.component';
 const routes: Routes = [
   { path: 'github', component: GithubComponent},
   { path: 'about', component: AboutComponent},
+  { path: '', redirectTo:"/github", pathMatch:"full"},
 ];
 
 @NgModule({
